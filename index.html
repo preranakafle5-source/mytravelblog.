@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Travel Blog</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Georgia, serif;
+      background-color: #f5f0eb;
+      color: #333;
+    }
+
+    /* HEADER */
+    header {
+      background-color: #2c7a4b;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: 40px;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 16px;
+      color: #c8e6c9;
+    }
+
+    /* NAVIGATION */
+    nav {
+      background-color: #1e5c38;
+      text-align: center;
+      padding: 12px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #c8e6c9;
+    }
+
+    /* MAIN CONTAINER */
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    /* ABOUT SECTION */
+    .about {
+      background-color: white;
+      border-radius: 8px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .about h2 {
+      color: #2c7a4b;
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    .about p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    /* BLOG CARD */
+    .blog-card {
+      background-color: white;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .blog-card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      font-size: 22px;
+      color: #2c7a4b;
+      margin-bottom: 8px;
+    }
+
+    .card-content .date {
+      font-size: 13px;
+      color: #999;
+      margin-bottom: 12px;
+    }
+
+    .card-content p {
+      font-size: 15px;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 16px;
+      color: #2c7a4b;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #2c7a4b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>My Travel Blog</h1>
+    <p>Exploring the world, one trip at a time</p>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Destinations</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+
+    <!-- ABOUT SECTION -->
+    <section class="about">
+      <h2>Hello, I'm Prerana!</h2>
+      <p>
+        I am a travel lover from Nepal who enjoys discovering new cultures,
+        tasting local food, and visiting beautiful places. This blog is where I share my adventures with you!
+      </p>
+    </section>
+
+    <!-- BLOG POST 1 -->
+    <article class="blog-card">
+      <img src="OIP.jpg" alt="Himalayas" />
+      <div class="card-content">
+        <h2>Trekking in the Himalayas</h2>
+        <p class="date">April 10, 2025</p>
+        <p>
+          Nepal is home to the tallest mountains in the world. I recently trekked to Everest Base Camp and it was the most amazing
+          experience of my life. The views, the people, and the fresh mountain air were truly unforgettable.
+        </p>
+        <a class="read-more" href="#">Read More →</a>
+      </div>
+    </article>
+
+    <!-- BLOG POST 2 -->
+    <article class="blog-card">
+      <img src="download.webp" alt="Thailand Beach" />
+      <div class="card-content">
+        <h2>Beaches of Thailand</h2>
+        <p class="date">February 22, 2025</p>
+        <p>
+          Thailand has some of the most beautiful beaches I have ever seen. The clear blue water, white sand, and delicious tropical food made
+          my trip to Phuket absolutely perfect. I also explored local temples and busy street food markets.
+        </p>
+        <a class="read-more" href="#">Read More →</a>
+      </div>
+    </article>
+
+    <!-- BLOG POST 3 -->
+    <article class="blog-card">
+      <img src="download (1).webp" alt="Paris" />
+      <div class="card-content">
+        <h2>A Weekend in Paris</h2>
+        <p class="date">December 5, 2024</p>
+        <p>
+          Paris is everything you imagine it to be i.e. romantic, beautiful, and full of amazing food. I visited the Eiffel Tower, walked along
+          the Seine River, and ate the best croissants of my life. It was truly a dream trip!
+        </p>
+        <a class="read-more" href="#">Read More →</a>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 My Travel Blog | Made with love by Prerana</p>
+  </footer>
+
+</body>
+
+</html>
